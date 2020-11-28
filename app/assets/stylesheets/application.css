@@ -1,4 +1,12 @@
-/*
- *= require_tree .
- *= require_self
- */
+// 全体
+
+.base-container {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+// max-width
+
+.mw-xl {
+  max-width: 1200px;
+}

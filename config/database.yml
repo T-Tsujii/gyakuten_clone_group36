@@ -5,14 +5,14 @@ default: &default
 
 development:
   <<: *default
-  database: gyakuten_clone_group35_development
+  database: yanbaru_code_clone_app_36_development
 
 test:
   <<: *default
-  database: gyakuten_clone_group35_test
+  database: yanbaru_code_clone_app_36_test
 
 production:
   <<: *default
-  database: gyakuten_clone_group35_production
-  username: gyakuten_clone_group35
-  password: <%= ENV['GYAKUTEN_CLONE_GROUP_DATABASE_PASSWORD'] %>
+  database: yanbaru_code_clone_app_36_production
+  username: yanbaru_code_clone_app_36
+  password: <%= ENV['YANBARU_CODE_CLONE_APP_DATABASE_PASSWORD'] %>

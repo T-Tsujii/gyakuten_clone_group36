@@ -1,11 +1,11 @@
-// 全体
+/* 全体 */
 
 .base-container {
   margin: 0 auto;
   padding: 1rem;
 }
 
-// max-width
+/* max-width */ 
 
 .mw-xl {
   max-width: 1200px;

@@ -1,10 +1,10 @@
 require 'csv'
 
 namespace :import_csv do
-  desc "CSVデータをインポートするタスク"
+  desc "textに関するCSVデータをインポートするタスク"
   task texts: :environment do
     # インポートするファイルのパスを取得
-    path = "db/csv_data/csv_data.csv"
+    path = "db/csv_data/text_data.csv"
     # インポートするデータを格納するための配列
     list = []
     # CSVファイルからインポートするデータを取得し配列に格納
@@ -12,7 +12,7 @@ namespace :import_csv do
       list << row.to_h
     end
     puts "インポート処理を開始"
-    # インポートができなかった場合の例外処理
+    # インポートに成功した場合の処理
     begin
       Text.create!(list)
       puts "インポート完了!!"

@@ -22,7 +22,7 @@
     <header>
     </header>
     <main>
-      <div class="base-container mw-xl">
+      <div class="container-fluid py-4 <%= devise_controller? ? 'mw-md' : 'mw-xl' %>">
         <%= yield %>
       </div>
     </main>

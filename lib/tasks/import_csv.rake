@@ -1,6 +1,7 @@
 require 'csv'
 
 namespace :import_csv do
+  # rake import_csv:texts
   desc "textに関するCSVデータをインポートするタスク"
   task texts: :environment do
     # インポートするファイルのパスを取得

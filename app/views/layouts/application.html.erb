@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    
     <% if user_signed_in? %>
       <%# ログイン時 %>
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete, data: { confirm: "ログアウトしますか？" } %>
@@ -22,6 +23,7 @@
     <header>
     </header>
     <main>
+    <%= render "layouts/flash" %>
       <div class="base-container mw-xl">
         <%= yield %>
       </div>

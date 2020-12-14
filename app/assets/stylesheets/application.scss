@@ -16,6 +16,7 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   max-width: 1200px;
 }
 
+
 // 共通
 .base-container {
   @extend .container-fluid;
@@ -30,4 +31,28 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 
 .alert-alert {
   @extend .alert-danger;
+
+  .mw-md {
+    max-width: 576px;
+  }
+
+
+  /* ログイン画面 */
+
+  h1.sign-in {
+    text-align: center;
+  }
+
+  /* nav-itemの文字色 */
+  .navbar .navbar-nav .nav-link {
+    color: #FFFFFF;
+  }
+
+  .navbar .navbar-brand {
+    color: #FFFFFF;
+  }
+
+  .navbar {
+    background: #6699FF;
+  }
 }

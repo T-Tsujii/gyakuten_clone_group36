@@ -1,13 +1,24 @@
 /* 全体 */
 @import "bootstrap/scss/bootstrap";
 
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/regular";
+
 .base-container {
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* max-width */ 
+/* max-width */
 
 .mw-xl {
   max-width: 1200px;
+}
+
+// 共通
+.base-container {
+  @extend .container-fluid;
+  max-width: var(--breakpoint-lg);
+  padding: 30px 15px;
 }

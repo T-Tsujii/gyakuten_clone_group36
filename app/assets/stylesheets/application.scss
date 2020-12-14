@@ -22,3 +22,12 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   max-width: var(--breakpoint-lg);
   padding: 30px 15px;
 }
+
+// フラッシュ
+.alert-notice {
+  @extend .alert-success;
+}
+
+.alert-alert {
+  @extend .alert-danger;
+}

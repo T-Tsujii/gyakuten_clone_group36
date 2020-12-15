@@ -1,2 +1,30 @@
-<h1>トップページ</h1>
-<p>テキスト教材を表示する画面です</p>
+<div class="base-container mw-xl">
+  <div class="texts-wrapper">
+    <div class="contents-title text-center">
+      <h1>テキスト教材</h1>
+    </div>
+
+    <div class="row">
+      <% @texts.each do |text| %>
+        <div class="col-12 col-md-6 col-lg-4 text-card-container">
+          <div class="card content-card border-dark mb-3">
+            <a target="_blank" href="/texts/<%= text.id %>">
+              <div class="card-header p-0">
+                <img loading="lazy" alt="<%= text.title %>" class="img-fluid" src="https://trello-attachments.s3.amazonaws.com/5e65d7fe7e526f7060e27480/5fbf3f36bf714b2cddb82681/x/3af2293df5cad71e0745f06ed650acb1/no_image.jpg">
+              </div>
+              <div class="card-body text-dark text-card-body">
+                <div id="read-text-<%= text.id %>">
+
+                </div>
+                <p class="card-text text-title">
+                  <%= text.title %>
+                </p>
+                <p>【<%= text.genre %>】</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      <% end %>  
+    </div>
+  </div>
+    </div>

@@ -1,5 +1,5 @@
 class TextsController < ApplicationController
   def index
-    @texts = Text.order(id: :asc)
+    @texts = Text.recent
   end
 end

@@ -5,5 +5,5 @@ class Text < ApplicationRecord
 
   scope :specific_genre, -> { where(genre: ["Basic", "Git", "HTML&CSS", "Ruby", "Ruby on Rails"]) }
   scope :sorted, -> { order(id: :asc) }
-  scope :recent, -> { specific_genre.sorted }
+  scope :id_sorted_only_specific_genre, -> { specific_genre.sorted }
 end

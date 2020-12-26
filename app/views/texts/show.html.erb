@@ -1,14 +1,19 @@
 <div class="base-container mw-md">
-      <section id="text-contents">
+  <section id="text-contents">
   <h2><%= @text.title %></h2>
-    <div class="movie_info_box">
-  <p class="p-2 text-center">動画教材を視聴された上で，テキスト教材を元に手を動かすようにして下さい。</p>
+  <div class="movie_info_box">
+    <p class="p-2 text-center">
+      動画教材を視聴された上で，テキスト教材を元に手を動かすようにして下さい。
+    </p>
+  </div>
 </div>
-
 <div class="markdown">
   <%= markdown(@text.content) %>
 </div>
-
 <div id="read-text-185" class="mb-4">
- <object><a class="btn btn-primary btn-block" data-remote="true" rel="nofollow" data-method="delete" href="/texts/185/read_texts">読破済みを解除</a></object>
+  <object>
+    <a class="btn btn-primary btn-block" data-remote="true" rel="nofollow" data-method="delete" href="/texts/185/read_texts">
+      読破済みを解除
+    </a>
+  </object>
 </div>

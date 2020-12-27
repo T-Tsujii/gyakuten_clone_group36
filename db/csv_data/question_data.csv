@@ -51,7 +51,7 @@ undefined method `scale' for #<AvatarUploader:0x00007fafe1bce510>
 ```"
 Dockerアプリをクローンからのデプロイってどうやればいいんでしょうか？,"今Dockerでアプリ作ったんですけど、herokuにデプロイができなくて困ってます。。
 
-`git push heroku master`　すると下記のようにエラーになります。
+`git push heroku master` すると下記のようにエラーになります。
 
 ```
 Counting objects: 359, done.

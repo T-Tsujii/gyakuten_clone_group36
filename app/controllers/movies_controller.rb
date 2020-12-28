@@ -1,3 +1,5 @@
+require "csv"
+
 class MoviesController < ApplicationController
   def csv_output
     @movies = Movie.all

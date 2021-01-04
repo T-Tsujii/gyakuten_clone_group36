@@ -1,8 +1,5 @@
-require "csv"
-
 class MoviesController < ApplicationController
   def index
-    @movies = Movie.all
-    send_data render_to_string, filname: "movie_data.csv", type: :csv
+    @movies = Movie.id_sorted_only_specific_genre
   end
 end

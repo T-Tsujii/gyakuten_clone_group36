@@ -2,5 +2,5 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "texts#index"
   resources :texts
-  get "/movies", to: "movies#index"
+  # get "/texts", to: "texts#index"
 end

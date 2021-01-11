@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
   def index
-    @movies = Movie.all
+    @movies = Movie.id_sorted_only_specific_genre
   end
 end

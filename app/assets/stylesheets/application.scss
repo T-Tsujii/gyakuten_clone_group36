@@ -1,4 +1,10 @@
 /* 全体 */
+
+/*
+ *= require_tree .
+ *= require_self
+ */
+
 @import "bootstrap/scss/bootstrap";
 
 $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
@@ -30,35 +36,29 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 
 .alert-alert {
   @extend .alert-danger;
+}
 
 
+.mw-md {
+  max-width: 576px;
+}
 
-  .mw-md {
-    max-width: 576px;
-  }
 
+/* ログイン画面 */
 
-  /* ログイン画面 */
+h1.sign-in {
+  text-align: center;
+}
 
-  h1.sign-in {
-    text-align: center;
-  }
+/* nav-itemの文字色 */
+.navbar .navbar-nav .nav-link {
+  color: #FFFFFF;
+}
 
-  /* nav-itemの文字色 */
-  .navbar .navbar-nav .nav-link {
-    color: #FFFFFF;
-  }
+.navbar .navbar-brand {
+  color: #FFFFFF;
+}
 
-  .navbar .navbar-brand {
-    color: #FFFFFF;
-  }
-
-  .navbar {
-    background: #6699FF;
-  }
-
-  /* テキスト教材一覧ページ */
-  .card-body {
-    height: 175px
-  }
+.navbar {
+  background-color: #6699FF;
 }

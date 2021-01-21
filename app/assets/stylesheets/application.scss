@@ -22,6 +22,10 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   max-width: 1200px;
 }
 
+.mw-md {
+  max-width: 576px;
+}
+
 // 共通
 .base-container {
   @extend .container-fluid;
@@ -38,11 +42,9 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
   @extend .alert-danger;
 }
 
-
 .mw-md {
   max-width: 576px;
 }
-
 
 /* ログイン画面 */
 
@@ -57,6 +59,16 @@ h1.sign-in {
 
 .navbar .navbar-brand {
   color: #FFFFFF;
+}
+
+/* テキスト教材一覧ページ */
+.card-body {
+  height: 175px
+}
+
+//Rails 動画教材一覧ページ
+.card-body .text-dark {
+  height: 190px;
 }
 
 .navbar {

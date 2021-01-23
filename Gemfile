@@ -18,6 +18,7 @@ gem 'devise-bootstrap-views', '~> 1.0'
 gem 'redcarpet'
 gem 'coderay'
 gem 'activeadmin'
+gem 'kaminari'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

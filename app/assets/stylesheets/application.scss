@@ -74,3 +74,23 @@ h1.sign-in {
 .navbar {
   background-color: #6699FF;
 }
+
+/*ページネーション自体のデザイン*/
+.pagination>li>a {          
+  border: none;     
+  color: #696969;   
+}
+
+/* 表示しているページ番号のデザイン */
+.pagination>.active>a {       
+  border-radius: 15px;     
+}
+
+/*ホバー時のデザイン*/
+.pagination>li>a:hover {        
+  border-radius: 15px;    
+}
+
+.pagination {
+  justify-content: center;
+}
